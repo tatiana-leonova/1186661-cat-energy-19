@@ -33,6 +33,94 @@
     </nav>
   </header>
 
+  <main class="page-name">
+
+
+    <section class="title-block">
+      <h1 class="title-block__title">Подбор программы</h1>
+      <p class="title-block__subtitle">Заполните анкету и мы подберем программу питания для вашего кота
+      </p>
+    </section>
+
+    <section class="form">
+      <h2 class="visually-hidden">Форма для подбора программы питания котов</h2>
+      <form class="" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="">
+          <legend class="visually-hidden">Данные кота и цель программы</legend>
+          <label>Имя:*
+            <input type="text" name="name" placeholder="Барсик" required>
+          </label>
+          <label>Вес (кг):*
+            <input type="number" name="weight" min="1" placeholder="7" required>
+          </label>
+          <label>Возраст (лет):
+            <input type="number" name="age" min="1" placeholder="7">
+          </label>
+
+          <label>
+            <input type="radio" name="slim-program" checked>
+            Похудение
+          </label>
+          <label>
+            <input type="radio" name="slim-program">
+            Набор массы
+          </label>
+          <label>
+            <input type="radio" name="slim-program">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Контактные данные (владельца кота)</legend>
+          <label>E-mail:*
+            <input type="email" name="email" placeholder="kuklachev@gmail.com">
+          </label>
+          <label>Телефон:*
+            <input type="tel" name="tel" placeholder="8 (960) 900-60-90">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Комментарий</legend>
+          <label for="comment" aria-label="Текст комментарий">
+            <textarea name="comment" id="comment" cols="50" rows="8">Расскажите обо всех повадках кота</textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="">
+          <legend>Дополнительно</legend>
+          <label>
+            <input type="checkbox" name="sweetener" checked>
+            <span></span>
+            Сахарозаменитель
+          </label>
+          <label>
+            <input type="checkbox" name="water">
+            <span></span>
+            Питьевая вода
+          </label>
+          <label>
+            <input type="checkbox" name="milk">
+            <span></span>
+            Молоко
+          </label>
+          <label>
+            <input type="checkbox" name="vitamins">
+            <span></span>
+            Витамины
+          </label>
+        </fieldset>
+        <button class="button" type="submit">Отправить заявку</button>
+      </form>
+      <p class="">
+        <sup>*</sup> — Обязательные поля
+      </p>
+    </section>
+
+
+  </main>
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
