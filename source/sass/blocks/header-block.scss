@@ -1,0 +1,58 @@
+.header-block {
+  position: relative;
+  margin-bottom: 20px;
+
+  font-family: $font-title;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+
+  &::before {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    height: 305px;
+    background-color: $green;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+.header-block__title {
+  @include zero-indent;
+  @include text(36px, 36px);
+  font-weight: 400;
+  margin-bottom: 25px;
+  padding-top: 30px;
+}
+
+.header-block__subtitle {
+  @include zero-indent;
+  @include text(14px, 14px);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.header-block__image {
+  display: block;
+  position: relative;
+}
+
+.header-block__button {
+  color: $white;
+  background-color: $green;
+  width: 280px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

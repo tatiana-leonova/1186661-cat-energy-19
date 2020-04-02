@@ -1,0 +1,26 @@
+.contacts {
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contacts__description {
+  @include text(16px, 20px);
+  font-family: $font-title;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include text(14px, 20px);
+}
+
+.contacts__map {
+  display: block;
+  margin-left: 0;
+}
