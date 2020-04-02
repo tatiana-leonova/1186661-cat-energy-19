@@ -1,0 +1,21 @@
+.show-more {
+  text-align: center;
+}
+
+.show-more__title {
+  @include text(16px, 20px);
+  font-family: $font-title;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.show-more__subtitle {
+  @include text(12px, 16px);
+  font-family: $font-main;
+}
+
+.show-more__button {
+  color: $text;
+  background-color: $bg-grey;
+}

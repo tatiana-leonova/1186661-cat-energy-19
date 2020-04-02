@@ -7,6 +7,12 @@
   background-color: $bg-grey;
 }
 
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
 .example__title {
   @include text(36px, 60px);
   font-family: $font-title;
@@ -21,7 +27,7 @@
 }
 
 .example__item-subtitle {
-margin-left: 0;
+  margin-left: 0;
 }
 
 .example__cost-food {
