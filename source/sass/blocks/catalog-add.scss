@@ -9,3 +9,7 @@
   font-weight: 400;
   color: $subtitle;
 }
+
+.catalog-add__list {
+  @include no-list;
+}

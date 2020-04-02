@@ -1,3 +1,7 @@
 .nutrition-programs {
   display: flex;
 }
+
+.nutrition-programs__list {
+  @include no-list;
+}

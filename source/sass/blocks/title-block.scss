@@ -3,6 +3,7 @@
   @include text(36px, 60px);
   font-family: $font-title;
   font-weight: 400;
+  color: $title;
 
   padding-top: 22px;
   padding-right: 22px;
@@ -16,6 +17,7 @@
   @include text(14px, 18px);
   font-family: $font-title;
   font-weight: 400;
+  color: $title;
 
   text-transform: uppercase;
 

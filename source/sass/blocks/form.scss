@@ -20,7 +20,11 @@
 .form__input {
   @include text(16px, 18px);
   font-family: $font-title;
-  color: $subtitle;
+  color: $text;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.form__input::placeholder {
+  color: $text;
 }

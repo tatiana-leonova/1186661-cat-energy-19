@@ -16,6 +16,7 @@
 .example__title {
   @include text(36px, 60px);
   font-family: $font-title;
+  color: $title;
   font-weight: 400;
 }
 
@@ -23,10 +24,13 @@
   @include text(24px, 24px);
   font-family: $font-title;
   font-weight: 400;
+  color: $title;
   text-transform: uppercase;
 }
 
 .example__item-subtitle {
+  @include text(12px, 12px);
+  font-family: $font-main;
   margin-left: 0;
 }
 
@@ -34,6 +38,7 @@
   @include text(14px, 20px);
   font-family: $font-title;
   font-weight: 400;
+  color: $title;
   text-transform: uppercase;
 
   text-align: center;
