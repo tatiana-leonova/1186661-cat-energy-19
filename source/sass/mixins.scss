@@ -1,0 +1,33 @@
+@mixin text($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin image-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin zero-indent {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin no-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

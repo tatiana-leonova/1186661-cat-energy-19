@@ -1,0 +1,28 @@
+.title-block__title {
+  @include zero-indent;
+  @include text(36px, 60px);
+  font-family: $font-title;
+  font-weight: 400;
+  color: $title;
+
+  padding-top: 22px;
+  padding-right: 22px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+
+  border-bottom: 1px solid $bg-grey;
+}
+
+.title-block__subtitle {
+  @include text(14px, 18px);
+  font-family: $font-title;
+  font-weight: 400;
+  color: $title;
+
+  text-transform: uppercase;
+
+  padding-top: 22px;
+  padding-right: 22px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+}

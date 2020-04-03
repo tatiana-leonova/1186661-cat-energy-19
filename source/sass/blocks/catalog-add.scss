@@ -1,0 +1,15 @@
+.catalog-add {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog-add__title {
+  @include text(24px, 24px);
+  font-family: $font-title;
+  font-weight: 400;
+  color: $subtitle;
+}
+
+.catalog-add__list {
+  @include no-list;
+}
