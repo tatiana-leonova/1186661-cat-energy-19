@@ -2,6 +2,11 @@
   background-color: $bg-grey;
 }
 
+.page-footer__wrapper {
+  width: $width-mobile;
+  margin: 0 auto;
+}
+
 .page-footer__contacts--white {
   background-color: $white;
 }

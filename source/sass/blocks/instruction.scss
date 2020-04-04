@@ -1,7 +1,5 @@
 .instruction {
-  margin-right: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .instruction__title {
@@ -12,7 +10,52 @@
 }
 
 .instruction__item {
+  position: relative;
   margin-bottom: 30px;
+  padding-left: 80px;
+
+  &::before {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 0;
+    left: 0;
+
+    background-color: $green;
+
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.instruction__item--leaf {
+  &::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.instruction__item--powder {
+  &::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.instruction__item--dining {
+  &::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.instruction__item--clock {
+  &::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .instruction__list {
