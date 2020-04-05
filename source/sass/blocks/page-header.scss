@@ -2,6 +2,11 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-top: 10px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .page-header__wrapper {
@@ -25,4 +30,8 @@
 
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }

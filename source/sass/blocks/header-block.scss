@@ -1,6 +1,5 @@
 .header-block {
   position: relative;
-  margin: 0 auto;
   margin-bottom: 20px;
 
   font-family: $font-title;
@@ -21,11 +20,13 @@
     background-position: top center;
     background-repeat: no-repeat;
   }
-}
 
-.header-block__wrapper {
-  width: $width-mobile;
-  margin: 0 auto;
+  @media (min-width: $width-tablet) {
+    background-color: $white;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+  }
 }
 
 .header-block__title {
@@ -34,6 +35,12 @@
   font-weight: 400;
   margin-bottom: 25px;
   padding-top: 30px;
+
+  @media (min-width: $width-tablet) {
+    @include text(60px, 60px);
+    color: $title;
+    text-align: left;
+  }
 }
 
 .header-block__subtitle {
@@ -41,15 +48,26 @@
   @include text(14px, 14px);
   text-transform: uppercase;
   margin-bottom: 25px;
+
+  @media (min-width: $width-tablet) {
+    @include text(20px, 20px);
+    color: $title;
+    text-align: left;
+  }
 }
 
 .header-block__image {
   display: block;
   position: relative;
+  margin: 0 auto;
 }
 
 .header-block__button {
   @include text(14px, 18px);
+
+  @media (min-width: $width-tablet) {
+    @include text(20px, 20px);
+  }
 
   &:hover {
     background-color: #5eaa2f;

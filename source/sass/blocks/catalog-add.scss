@@ -3,6 +3,10 @@
   font-family: $font-title;
   font-weight: 400;
   color: $subtitle;
+
+  @media (min-width: $width-tablet) {
+    @include text(36px, 36px);
+  }
 }
 
 .catalog-add__list {
