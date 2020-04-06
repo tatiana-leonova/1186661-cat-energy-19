@@ -14,22 +14,31 @@
     padding-bottom: 50px;
     padding-top: 30px;
   }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+  }
 }
 
 .programs-item__title {
   position: relative;
   padding-left: 70px;
 
-  @media (min-width: $width-tablet) {
-    @include text(36px, 37px);
-    padding-left: 0;
-  }
-
   @include text(24px, 37px);
   font-family: $font-title;
   font-weight: 400;
   color: $title;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include text(36px, 37px);
+    padding-left: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 160px;
+    margin-bottom: 70px;
+  }
 
   &::before {
     @include pseudo($display: block, $pos: absolute, $content: "");
@@ -48,6 +57,15 @@
 
       width: 200px;
       height: 200px;
+    }
+
+    @media (min-width: $width-desktop) {
+
+      top: -30px;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
     }
   }
 }
@@ -68,6 +86,13 @@
 
       @include image-size(141px, 194px);
     }
+
+    @media (min-width: $width-desktop) {
+      top: -35px;
+      left: 15px;
+
+      @include image-size(71px, 97px);
+    }
   }
 }
 
@@ -87,6 +112,13 @@
 
       @include image-size(268px, 113px);
     }
+
+    @media (min-width: $width-desktop) {
+      top: -5px;
+      left: -20px;
+
+      @include image-size(134px, 57px);
+    }
   }
 }
 
@@ -95,6 +127,10 @@
     @include text(16px, 24px);
     padding-right: 300px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 0;
   }
 }
 

@@ -21,6 +21,7 @@
     @include text(18px, 25px);
     font-weight: 400;
     border-bottom: none;
+    margin-right: 15px;
   }
 }
 
@@ -39,4 +40,10 @@
 
 .site-list__item--active {
   border-bottom: 2px solid $green;
+}
+
+.site-list__item-link--index {
+  @media (min-width: $width-desktop) {
+    color: $white;
+  }
 }
