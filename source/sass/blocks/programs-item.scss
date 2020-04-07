@@ -1,22 +1,137 @@
 .programs-item {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  padding-top: 10px;
-  padding-right: 35px;
-  padding-bottom: 20px;
+  position: relative;
   padding-left: 20px;
-
+  padding-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 
   background-color: $bg-grey;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+  }
 }
 
 .programs-item__title {
+  position: relative;
+  padding-left: 70px;
+
   @include text(24px, 37px);
   font-family: $font-title;
   font-weight: 400;
   color: $title;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include text(36px, 37px);
+    padding-left: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 160px;
+    margin-bottom: 70px;
+  }
+
+  &::before {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: -5px;
+    left: 0;
+
+    background-color: $green;
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    @media (min-width: $width-tablet) {
+      left: 400px;
+      top: 20px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $width-desktop) {
+
+      top: -30px;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.programs-item__title--slim {
+  &::after {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: -8px;
+    left: 7px;
+
+    @include image-size(35px, 49px);
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $width-tablet) {
+      top: 7px;
+      left: 430px;
+
+      @include image-size(141px, 194px);
+    }
+
+    @media (min-width: $width-desktop) {
+      top: -35px;
+      left: 15px;
+
+      @include image-size(71px, 97px);
+    }
+  }
+}
+
+.programs-item__title--mass {
+  &::after {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 5px;
+    left: -9px;
+
+    @include image-size(67px, 28px);
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $width-tablet) {
+      top: 65px;
+      left: 360px;
+
+      @include image-size(268px, 113px);
+    }
+
+    @media (min-width: $width-desktop) {
+      top: -5px;
+      left: -20px;
+
+      @include image-size(134px, 57px);
+    }
+  }
+}
+
+.programs-item__description {
+  @media (min-width: $width-tablet) {
+    @include text(16px, 24px);
+    padding-right: 300px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 0;
+  }
 }
 
 .programs-item__link {
@@ -30,5 +145,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    @include text(20px, 20px);
   }
 }

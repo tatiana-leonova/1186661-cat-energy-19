@@ -1,7 +1,9 @@
-.nutrition-programs {
-  display: flex;
-}
-
 .nutrition-programs__list {
   @include no-list;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

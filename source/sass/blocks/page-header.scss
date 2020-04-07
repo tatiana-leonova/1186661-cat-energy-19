@@ -1,12 +1,46 @@
 .page-header {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid $bg-grey;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+  }
 }
 
 .page-header__logo {
   display: block;
-  border-bottom: 1px solid $bg-grey;
-  width: 320px;
-  height: 65px;
+}
+
+.page-header__toggle {
+  width: 24px;
+  height: 18px;
+
+  background-color: transparent;
+  border: none;
+
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }

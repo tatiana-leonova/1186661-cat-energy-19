@@ -7,7 +7,6 @@
   width: 280px;
 
   display: block;
-  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: none;
@@ -15,4 +14,12 @@
   text-align: center;
 
   border: none;
+
+  @media (min-width: $width-tablet) {
+    width: 249px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 169px;
+  }
 }

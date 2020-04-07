@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
 
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .contacts__description {
@@ -12,13 +12,22 @@
   font-weight: 400;
   color: $title;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include text(20px, 25px);
+  }
 }
 
 .contacts__address {
   @include text(14px, 20px);
+
+  @media (min-width: $width-tablet) {
+    @include text(16px, 20px);
+  }
 }
 
 .contacts__map {
   display: block;
   margin-left: 0;
+  margin-right: 0;
 }

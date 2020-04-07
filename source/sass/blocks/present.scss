@@ -7,10 +7,12 @@
   background-image: url("../img/gift-photo-desktop@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .present__description {
   @include text(16px, 20px);
+  position: relative;
   font-family: $font-main;
   font-weight: 400;
   color: $white;
@@ -19,4 +21,14 @@
   padding-right: 50px;
   padding-bottom: 40px;
   padding-left: 50px;
+
+  &::before {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 70px;
+    left: 113px;
+
+    @include image-size(56px, 61px);
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
 }

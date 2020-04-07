@@ -1,7 +1,5 @@
 .instruction {
-  margin-right: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .instruction__title {
@@ -9,12 +7,105 @@
   font-family: $font-title;
   color: $title;
   font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    @include text(60px, 60px);
+  }
 }
 
 .instruction__item {
+  position: relative;
   margin-bottom: 30px;
+  padding-left: 80px;
+
+  @media (min-width: $width-tablet) {
+    @include text(16px, 24px);
+    padding-left: 0;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    width: 300px;
+  }
+
+  &::before {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 0;
+    left: 0;
+
+    background-color: $green;
+
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $width-tablet) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.instruction__item--leaf {
+  &::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/bg-instruction-one.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
+  }
+}
+
+.instruction__item--powder {
+  &::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/bg-instruction-two.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
+  }
+}
+
+.instruction__item--dining {
+  &::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/bg-instruction-three.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
+  }
+}
+
+.instruction__item--clock {
+  &::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/bg-instruction-four.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
+  }
 }
 
 .instruction__list {
   @include no-list;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
