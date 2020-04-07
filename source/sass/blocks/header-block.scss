@@ -20,19 +20,37 @@
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-  }
 
-  .header-block__wrapper {
     @media (min-width: $width-tablet) {
-      display: flex;
-      flex-direction: column;
+      background-color: $white;
+      background-image: none;
+    }
+
+    @media (min-width: $width-desktop) {
+      @include pseudo($display: block, $pos: absolute, $content: "");
+      top: -175px;
+      left: 50%;
+      height: 696px;
+      background-color: #63a73a;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: top left;
     }
   }
 
   @media (min-width: $width-tablet) {
-    background-color: $white;
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 120px;
+  }
+}
+
+.header-block__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -45,6 +63,7 @@
 
   @media (min-width: $width-tablet) {
     @include text(60px, 60px);
+    width: 550px;
     color: $title;
     text-align: left;
     order: -3;
@@ -77,7 +96,12 @@
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
     order: -1;
-    align-items: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
   }
 
   &:hover {

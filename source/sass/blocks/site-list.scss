@@ -21,7 +21,12 @@
     @include text(18px, 25px);
     font-weight: 400;
     border-bottom: none;
-    margin-right: 15px;
+    margin-right: 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include text(20px, 25px);
+    margin-right: 35px;
   }
 }
 
@@ -38,7 +43,7 @@
   }
 }
 
-.site-list__item--active {
+.site-list__item-link--active {
   border-bottom: 2px solid $green;
 }
 
