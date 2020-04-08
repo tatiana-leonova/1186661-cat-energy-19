@@ -99,6 +99,7 @@
 
     <section class="example">
       <div class="example__wrapper container">
+        <div class="example__wrapper-text">
         <h3 class="example__title">Живой пример</h3>
         <p class="example__description">
           Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
@@ -106,6 +107,7 @@
           спит по&nbsp;16&nbsp;часов
           в&nbsp;день.
         </p>
+        <div class="example__list-wrapper">
         <dl class="example__list">
           <div class="example__item">
             <dt class="example__item-title">5&nbsp;кг</dt>
@@ -116,32 +118,36 @@
             <dd class="example__item-subtitle">затрачено времени</dd>
           </div>
         </dl>
-        <p class="example__cost-food">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;руб.</p>
-        <img src="img/before-mobile@1x.png" width="311" height="232"
+        <p class="example__cost-food"><span class="example__cost-food-span">Затраты на&nbsp;питание:</span> <span>15&nbsp;000&nbsp;руб.</span></p>
+      </div>
+    </div>
+    <div class="example__wrapper-img-button">
+        <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232"
           alt="Изображение кота до и после приема функционального питания Кэт энерджи">
         <div class="example__progress-block">
           <button class="example__progress-button example__progress-button--before" type="button">Было</button>
           <button class="example__progress-button example__progress-button--after" type="button">Стало</button>
         </div>
+       </div>
       </div>
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper container">
+    <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts page-footer__contacts--white">
         <h3 class="visually-hidden">Контакты интернет-магазина Кэт энерджи</h3>
-        <div class="contacts__inner">
+        <div class="contacts__inner container">
           <p class="contacts__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <figure class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="400"
+          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400"
             alt="Месторасположение магазина Кэт энерджи на карте">
         </figure>
       </div>
-      <div class="page-footer__inner">
+      <div class="page-footer__inner container">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="#">
             <img src="img/logo-footer.svg" width="138" height="24" alt="Логотип Кэт энерджи">
@@ -149,15 +155,9 @@
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li><a class="social__item social__item--vk" href="#" target="_blank" aria-label="Вконтакте">
-              </a>
-            </li>
-            <li><a class="social__item social__item--instagram" href="#" target="_blank" aria-label="Инстаграм">
-              </a>
-            </li>
-            <li><a class="social__item social__item--facebook" href="#" target="_blank" aria-label="Фейсбук">
-              </a>
-            </li>
+            <li><a class="social__item social__item--vk" href="#" target="_blank" aria-label="Вконтакте"></a></li>
+            <li><a class="social__item social__item--instagram" href="#" target="_blank" aria-label="Инстаграм"></a></li>
+            <li><a class="social__item social__item--facebook" href="#" target="_blank" aria-label="Фейсбук"></a></li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">

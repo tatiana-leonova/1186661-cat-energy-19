@@ -32,10 +32,14 @@
   font-family: $font-title;
   font-weight: 400;
 
+  width: 85px;
+
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
+    width: 125px;
+    margin: 0 auto;
   }
 }
 

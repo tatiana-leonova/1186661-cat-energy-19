@@ -1,14 +1,51 @@
 .example {
   padding-top: 10px;
   padding-bottom: 20px;
-
   background-color: $bg-grey;
+
+  @media (min-width: $width-tablet) {
+    background-image: linear-gradient(to bottom, $white 60%, $bg-grey 40%);
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: linear-gradient(to bottom, $white 20%, $bg-grey 80%);
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.example__list-wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: column;
+  }
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
   text-align: center;
+
+  @media (min-width: $width-desktop) {
+    width: 380px;
+  }
+}
+
+.example__item {
+  @media (min-width: $width-tablet) {
+    margin-right: 40px;
+  }
 }
 
 .example__title {
@@ -16,6 +53,14 @@
   font-family: $font-title;
   color: $title;
   font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    @include text(60px, 60px);
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 450px;
+  }
 }
 
 .example__item-title {
@@ -24,12 +69,30 @@
   font-weight: 400;
   color: $title;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include text(30px, 37px);
+  }
 }
 
 .example__item-subtitle {
   @include text(12px, 12px);
   font-family: $font-main;
   margin-left: 0;
+
+  @media (min-width: $width-tablet) {
+    @include text(14px, 14px);
+  }
+}
+
+.example__description {
+  @media (min-width: $width-tablet) {
+    @include text(16px, 24px);
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 450px;
+  }
 }
 
 .example__cost-food {
@@ -40,6 +103,42 @@
   text-transform: uppercase;
 
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    @include text(20px, 20px);
+    width: 190px;
+    text-align: right;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 370px;
+    text-align: left;
+  }
+}
+
+.example__cost-food-span {
+  @media (min-width: $width-desktop) {
+    margin-right: 50px;
+  }
+}
+
+.example__wrapper-img-button {
+  @media (min-width: $width-desktop) {
+    align-self: flex-end;
+  }
+}
+
+.example__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: 500px;
+  }
+}
+
+.example__progress-block {
+  text-align: center;
 }
 
 .example__progress-button {
@@ -47,6 +146,7 @@
   font-family: $font-title;
   font-weight: 400;
   text-transform: uppercase;
+  background-color: transparent;
 
   border: none;
 }
