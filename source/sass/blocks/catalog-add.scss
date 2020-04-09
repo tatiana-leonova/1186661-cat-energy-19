@@ -1,3 +1,27 @@
+.catalog-add {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+// .catalog-add__title {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   width: 100vw;
+//   height: 3px;
+//   margin-top: 2px;
+//   background: #68b738;
+//   z-index: -1;
+
+// }
+
+.catalog-add__wrapper {
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .catalog-add__title {
   @include text(24px, 24px);
   font-family: $font-title;

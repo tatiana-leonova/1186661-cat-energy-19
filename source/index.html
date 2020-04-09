@@ -100,35 +100,37 @@
     <section class="example">
       <div class="example__wrapper container">
         <div class="example__wrapper-text">
-        <h3 class="example__title">Живой пример</h3>
-        <p class="example__description">
-          Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему
-          спит по&nbsp;16&nbsp;часов
-          в&nbsp;день.
-        </p>
-        <div class="example__list-wrapper">
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__item-title">5&nbsp;кг</dt>
-            <dd class="example__item-subtitle">снижение веса</dd>
+          <h3 class="example__title">Живой пример</h3>
+          <p class="example__description">
+            Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек
+            и&nbsp;по-прежнему
+            спит по&nbsp;16&nbsp;часов
+            в&nbsp;день.
+          </p>
+          <div class="example__list-wrapper">
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__item-title">5&nbsp;кг</dt>
+                <dd class="example__item-subtitle">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__item-title">60&nbsp;дней</dt>
+                <dd class="example__item-subtitle">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="example__cost-food"><span class="example__cost-food-span">Затраты на&nbsp;питание:</span>
+              <span>15&nbsp;000&nbsp;руб.</span></p>
           </div>
-          <div class="example__item">
-            <dt class="example__item-title">60&nbsp;дней</dt>
-            <dd class="example__item-subtitle">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="example__cost-food"><span class="example__cost-food-span">Затраты на&nbsp;питание:</span> <span>15&nbsp;000&nbsp;руб.</span></p>
-      </div>
-    </div>
-    <div class="example__wrapper-img-button">
-        <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232"
-          alt="Изображение кота до и после приема функционального питания Кэт энерджи">
-        <div class="example__progress-block">
-          <button class="example__progress-button example__progress-button--before" type="button">Было</button>
-          <button class="example__progress-button example__progress-button--after" type="button">Стало</button>
         </div>
-       </div>
+        <div class="example__wrapper-img-button">
+          <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232"
+            alt="Изображение кота до и после приема функционального питания Кэт энерджи">
+          <div class="example__progress-block">
+            <button class="example__progress-button example__progress-button--before" type="button">Было</button>
+            <button class="example__progress-button example__progress-button--after" type="button">Стало</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -140,11 +142,18 @@
         <h3 class="visually-hidden">Контакты интернет-магазина Кэт энерджи</h3>
         <div class="contacts__inner container">
           <p class="contacts__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-city">Санкт-Петербург</p>
+          </div>
         </div>
         <figure class="contacts__map">
-          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400"
-            alt="Месторасположение магазина Кэт энерджи на карте">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png"
+              alt="Месторасположение магазина Кэт энерджи на карте">
+          </picture>
         </figure>
       </div>
       <div class="page-footer__inner container">
@@ -156,7 +165,8 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li><a class="social__item social__item--vk" href="#" target="_blank" aria-label="Вконтакте"></a></li>
-            <li><a class="social__item social__item--instagram" href="#" target="_blank" aria-label="Инстаграм"></a></li>
+            <li><a class="social__item social__item--instagram" href="#" target="_blank" aria-label="Инстаграм"></a>
+            </li>
             <li><a class="social__item social__item--facebook" href="#" target="_blank" aria-label="Фейсбук"></a></li>
           </ul>
         </div>

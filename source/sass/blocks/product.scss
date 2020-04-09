@@ -41,6 +41,10 @@
     width: 125px;
     margin: 0 auto;
   }
+
+  @media (min-width: $width-desktop) {
+    width: 130px;
+  }
 }
 
 .product__title-link {
@@ -65,15 +69,30 @@
 
   @media (min-width: $width-tablet) {
     @include text(16px, 16px);
+    border-collapse: collapse;
+  }
+}
+
+.product__characteristics-item {
+  @media (min-width: $width-tablet) {
+    border-bottom: 1px solid #cecece;
   }
 }
 
 .product__characteristics-title {
   text-align: left;
   width: 100%;
+
+  @media (min-width: $width-tablet) {
+    padding: 8px;
+  }
 }
 
 .product__characteristics-value {
   text-align: right;
   width: 100%;
+
+  @media (min-width: $width-tablet) {
+    padding: 8px;
+  }
 }

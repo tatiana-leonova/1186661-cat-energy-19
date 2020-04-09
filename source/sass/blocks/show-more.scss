@@ -20,8 +20,16 @@
     left: 130px;
 
     @include image-size(31px, 31px);
-    background-image: url("../img/icon-plus.svg");
+    background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $width-tablet) {
+      top: 10px;
+      left: 100px;
+
+      @include image-size(61px, 61px);
+      background-image: url("../img/icon-plus.svg");
+    }
   }
 
   @media (min-width: $width-tablet) {
