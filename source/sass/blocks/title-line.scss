@@ -1,0 +1,18 @@
+.title-line {
+  position: relative;
+
+  &::after {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 14px;
+    right: 0;
+
+    width: 70%;
+    height: 3px;
+    background-color: $green;
+
+    @media (min-width: $width-tablet) {
+      top: 20px;
+      width: 100%;
+    }
+  }
+}

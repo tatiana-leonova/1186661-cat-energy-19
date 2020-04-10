@@ -1,7 +1,25 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__inner {
   display: flex;
   justify-content: space-between;
   padding: 0;
+
+  @media (min-width: $width-desktop) {
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 570px;
+
+    background-color: $white;
+
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+  }
 }
 
 .contacts__description {
@@ -25,6 +43,10 @@
     @include text(16px, 20px);
     width: 160px;
     text-align: right;
+
+    @media (min-width: $width-desktop) {
+      text-align: left;
+    }
   }
 }
 
