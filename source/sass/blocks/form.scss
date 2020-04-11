@@ -4,11 +4,17 @@
 
 .form__fieldset {
   border: none;
+  padding: 0;
 }
 
 .form__legend {
   position: relative;
   z-index: 1;
+
+  padding-right: 30px;
+
+  display: inline-block;
+  background-color: $white;
 
   @include text(24px, 24px);
   font-family: $font-title;
@@ -66,7 +72,7 @@
 
 .form__fieldset--program-goal {
   @media (min-width: $width-desktop) {
-    flex-grow: 1;
+    width: 570px;
   }
 }
 
@@ -78,14 +84,23 @@
 
 .form__row--cat-owner-email {
   @media (min-width: $width-desktop) {
-    flex-grow: 1;
     margin-right: 50px;
   }
 }
 
-.form__row--cat-owner-tel {
+.form__input--field-email {
+  flex-grow: 1;
+
   @media (min-width: $width-desktop) {
-    flex-grow: 1;
+    width: 486px;
+  }
+}
+
+.form__input--field-tel {
+  flex-grow: 1;
+
+  @media (min-width: $width-desktop) {
+    width: 472px;
   }
 }
 
@@ -125,14 +140,16 @@
 }
 
 .form__input--field {
-  flex-grow: 1;
-
   @media (min-width: $width-tablet) {
     padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
   }
+}
+
+.form__input--field-cat-information {
+  flex-grow: 1;
 }
 
 .form__row--additionally {

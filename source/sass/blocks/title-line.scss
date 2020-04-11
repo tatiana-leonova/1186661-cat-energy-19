@@ -3,15 +3,15 @@
 
   &::after {
     @include pseudo($display: block, $pos: absolute, $content: "");
-    top: 14px;
+    top: 35px;
     right: 0;
 
-    width: 70%;
+    width: 65%;
     height: 3px;
     background-color: $green;
 
     @media (min-width: $width-tablet) {
-      top: 20px;
+      top: 55px;
       width: 100%;
     }
   }
