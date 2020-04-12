@@ -52,3 +52,11 @@
     color: $white;
   }
 }
+
+.site-list__item-link--active-index {
+  border-bottom: 2px solid $green;
+
+  @media (min-width: $width-desktop) {
+    border-bottom: 2px solid $white;
+  }
+}

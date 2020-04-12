@@ -26,7 +26,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__item-link site-list__item-link--index site-list__item-link--active">Главная</a>
+              <a class="site-list__item-link site-list__item-link--index site-list__item-link--active-index">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__item-link site-list__item-link--index" href="catalog.html">Каталог продукции</a>
@@ -49,8 +49,12 @@
         <h2 class="header-block__title">Функциональное питание для котов</h2>
         <p class="header-block__subtitle">Занялся собой? Займись котом!</p>
 
-        <img class="header-block__image" src="img/index-can-mobile@1x.png" width="280" height="270"
-          alt="Изображение функционального питания Кэт энерджи Pro со вкусом курицы">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+          <img class="header-block__image" src="img/index-can-mobile@1x.png" width="280" height="270"
+            alt="Изображение функционального питания Кэт энерджи Pro со вкусом курицы">
+        </picture>
         <a class="header-block__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -99,29 +103,41 @@
 
     <section class="example">
       <div class="example__wrapper container">
-        <h3 class="example__title">Живой пример</h3>
-        <p class="example__description">
-          Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему
-          спит по&nbsp;16&nbsp;часов
-          в&nbsp;день.
-        </p>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__item-title">5&nbsp;кг</dt>
-            <dd class="example__item-subtitle">снижение веса</dd>
+        <div class="example__wrapper-text">
+          <h3 class="example__title">Живой пример</h3>
+          <p class="example__description">
+            Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек
+            и&nbsp;по-прежнему
+            спит по&nbsp;16&nbsp;часов
+            в&nbsp;день.
+          </p>
+          <div class="example__list-wrapper">
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__item-title">5&nbsp;кг</dt>
+                <dd class="example__item-subtitle">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__item-title">60&nbsp;дней</dt>
+                <dd class="example__item-subtitle">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="example__cost-food"><span class="example__cost-food-span">Затраты на&nbsp;питание:</span>
+              <span>15&nbsp;000&nbsp;руб.</span></p>
           </div>
-          <div class="example__item">
-            <dt class="example__item-title">60&nbsp;дней</dt>
-            <dd class="example__item-subtitle">затрачено времени</dd>
+        </div>
+        <div class="example__wrapper-img-button">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+            <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232"
+              alt="Изображение кота до и после приема функционального питания Кэт энерджи">
+          </picture>
+          <div class="example__progress-block">
+            <button class="example__progress-button example__progress-button--before" type="button">Было</button>
+            <button class="example__progress-button example__progress-button--after" type="button">Стало</button>
           </div>
-        </dl>
-        <p class="example__cost-food">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;руб.</p>
-        <img src="img/before-mobile@1x.png" width="311" height="232"
-          alt="Изображение кота до и после приема функционального питания Кэт энерджи">
-        <div class="example__progress-block">
-          <button class="example__progress-button example__progress-button--before" type="button">Было</button>
-          <button class="example__progress-button example__progress-button--after" type="button">Стало</button>
         </div>
       </div>
     </section>
@@ -129,19 +145,32 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper container">
+    <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts page-footer__contacts--white">
         <h3 class="visually-hidden">Контакты интернет-магазина Кэт энерджи</h3>
-        <div class="contacts__inner">
-          <p class="contacts__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wrapper container">
+          <div class="contacts__block">
+            <p class="contacts__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <div class="contacts__address">
+              <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__address-city">Санкт-Петербург</p>
+            </div>
+          </div>
         </div>
         <figure class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="400"
-            alt="Месторасположение магазина Кэт энерджи на карте">
+          <iframe class="contacts__map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.9750205566963!2d30.322076840808084!3d59.938765264719976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1586253181213!5m2!1sru!2sru"
+            width="320" height="400" tabindex="0" aria-label="Интерактивная карта">
+          </iframe>
+          <!-- <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400"
+              alt="Месторасположение магазина Кэт энерджи на карте">
+          </picture> -->
         </figure>
       </div>
-      <div class="page-footer__inner">
+      <div class="page-footer__inner container">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="#">
             <img src="img/logo-footer.svg" width="138" height="24" alt="Логотип Кэт энерджи">
@@ -149,15 +178,10 @@
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li><a class="social__item social__item--vk" href="#" target="_blank" aria-label="Вконтакте">
-              </a>
+            <li><a class="social__item social__item--vk" href="#" target="_blank" aria-label="Вконтакте"></a></li>
+            <li><a class="social__item social__item--instagram" href="#" target="_blank" aria-label="Инстаграм"></a>
             </li>
-            <li><a class="social__item social__item--instagram" href="#" target="_blank" aria-label="Инстаграм">
-              </a>
-            </li>
-            <li><a class="social__item social__item--facebook" href="#" target="_blank" aria-label="Фейсбук">
-              </a>
-            </li>
+            <li><a class="social__item social__item--facebook" href="#" target="_blank" aria-label="Фейсбук"></a></li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">

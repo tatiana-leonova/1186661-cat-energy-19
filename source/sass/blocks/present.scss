@@ -8,6 +8,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    width: 245px;
+  }
 }
 
 .present__description {
@@ -22,6 +33,25 @@
   padding-bottom: 40px;
   padding-left: 50px;
 
+  @media (min-width: $width-tablet) {
+    width: 620px;
+    text-align: left;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 420px;
+
+    @media (min-width: $width-desktop) {
+      width: 245px;
+      padding-top: 150px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+
+      text-align: center;
+    }
+  }
+
   &::before {
     @include pseudo($display: block, $pos: absolute, $content: "");
     top: 70px;
@@ -30,5 +60,15 @@
     @include image-size(56px, 61px);
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $width-tablet) {
+      top: 70px;
+      left: 100px;
+    }
+
+    @media (min-width: $width-desktop) {
+      top: 50px;
+      left: 100px;
+    }
   }
 }

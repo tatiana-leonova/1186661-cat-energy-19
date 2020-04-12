@@ -38,16 +38,17 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-bottom: 570px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 120px;
+    margin-bottom: 350px;
   }
 }
 
 .header-block__wrapper {
+  position: relative;
+
   @media (min-width: $width-tablet) {
     display: flex;
     flex-direction: column;
@@ -63,10 +64,10 @@
 
   @media (min-width: $width-tablet) {
     @include text(60px, 60px);
-    width: 550px;
+    margin-left: 100px;
+    width: 500px;
     color: $title;
     text-align: left;
-    order: -3;
   }
 }
 
@@ -78,9 +79,10 @@
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
+    width: 500px;
     color: $title;
     text-align: left;
-    order: -2;
+    margin-left: 100px;
   }
 }
 
@@ -88,14 +90,36 @@
   display: block;
   position: relative;
   margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: 709px;
+    height: 609px;
+
+    top: 225px;
+    left: 35px;
+
+    z-index: -1;
+
+    @include pseudo($display: block, $pos: absolute, $content: "");
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 552px;
+    height: 499px;
+
+    top: -35px;
+    left: 490px;
+  }
 }
 
 .header-block__button {
+  position: relative;
+
   @include text(14px, 18px);
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
-    order: -1;
+    margin-left: 100px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
