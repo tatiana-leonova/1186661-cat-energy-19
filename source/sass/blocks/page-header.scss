@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   padding-top: 15px;
 
   @media (min-width: $width-tablet) {
@@ -9,6 +10,23 @@
   @media (min-width: $width-desktop) {
     padding-top: 55px;
     padding-bottom: 55px;
+  }
+}
+
+.page-header--index {
+  @media (min-width: $width-desktop) {
+    &::before {
+      @include pseudo($display: block, $pos: absolute, $content: "");
+      top: 0;
+      right: 0;
+      left: 50%;
+      height: 696px;
+      background-color: #63a73a;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      z-index: -1;
+    }
   }
 }
 

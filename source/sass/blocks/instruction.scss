@@ -13,6 +13,17 @@
   }
 }
 
+.instruction__list {
+  @include no-list;
+  counter-reset: myCounter;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .instruction__item {
   position: relative;
   margin-bottom: 30px;
@@ -42,6 +53,27 @@
       height: 80px;
     }
   }
+
+  &::after {
+    @media (min-width: $width-tablet) {
+      @include pseudo($display: block, $pos: absolute, $content: "");
+      top: 77px;
+      left: 108px;
+      z-index: -1;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: #f2f2f2;
+
+      @include text(281px, 281px);
+      font-family: $font-title;
+      display: inline-block;
+      text-align: center;
+      margin: 5px 10px;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 .instruction__item--leaf {
@@ -49,12 +81,6 @@
     background-image: url("../img/advantage-leaf@1x.png");
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  @media (min-width: $width-tablet) {
-    background-image: url("../img/bg-instruction-one.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
   }
 }
 
@@ -64,12 +90,6 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
-  @media (min-width: $width-tablet) {
-    background-image: url("../img/bg-instruction-two.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
-  }
 }
 
 .instruction__item--dining {
@@ -78,12 +98,6 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
-  @media (min-width: $width-tablet) {
-    background-image: url("../img/bg-instruction-three.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
-  }
 }
 
 .instruction__item--clock {
@@ -91,21 +105,5 @@
     background-image: url("../img/advantage-clock@1x.png");
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  @media (min-width: $width-tablet) {
-    background-image: url("../img/bg-instruction-four.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
-  }
-}
-
-.instruction__list {
-  @include no-list;
-
-  @media (min-width: $width-tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }

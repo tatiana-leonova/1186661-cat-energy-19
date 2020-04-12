@@ -2,6 +2,12 @@
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 550px;
   }
 }
 
