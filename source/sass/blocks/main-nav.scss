@@ -1,3 +1,77 @@
+.main-nav {
+  position: relative;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+
+  width: $width-mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $width-tablet) {
+    width: 260px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 660px;
+  }
+}
+
+.main-nav__logo {
+  display: block;
+}
+
 .main-nav__list {
   @include no-list;
+}
+
+.main-nav--closed .site-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+
+  top: 9px;
+  right: 2px;
+
+  display: block;
+  width: 25px;
+  height: 19px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
 }

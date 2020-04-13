@@ -31,33 +31,32 @@
 }
 
 .page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 
   border-bottom: 1px solid $bg-grey;
 
+  @media (min-width: $mobile-width-only) {
+    width: $mobile-width-only;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
   @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding: 0 30px;
+
     border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding: 0 40px;
   }
 }
 
 .page-header__logo {
   display: block;
-}
-
-.page-header__toggle {
-  width: 24px;
-  height: 18px;
-
-  background-color: transparent;
-  border: none;
-
-  background-image: url("../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: $width-tablet) {
-    display: none;
-  }
 }
