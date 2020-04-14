@@ -36,6 +36,14 @@
   }
 }
 
+.site-list__item:first-child {
+  border-top: 1px solid $bg-grey;
+
+  @media (min-width: $width-tablet) {
+    border-top: none;
+  }
+}
+
 .site-list__item-link {
   color: $title;
   text-decoration: none;

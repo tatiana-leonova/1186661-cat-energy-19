@@ -12,6 +12,7 @@
   width: $width-mobile;
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 10px;
 
   @media (min-width: $width-tablet) {
     width: 260px;

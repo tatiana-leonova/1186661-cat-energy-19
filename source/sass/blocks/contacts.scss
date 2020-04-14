@@ -44,6 +44,8 @@
   font-weight: 400;
   color: $title;
   text-transform: uppercase;
+
+  width: 123px;
   margin-right: 20px;
 
   @media (min-width: $width-tablet) {
@@ -64,6 +66,14 @@
       text-align: left;
     }
   }
+}
+
+.contacts__address-city {
+  margin-top: 0;
+}
+
+.contacts__address-street {
+  margin-bottom: 0;
 }
 
 .contacts__map {
