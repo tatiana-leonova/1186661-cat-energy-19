@@ -184,7 +184,55 @@
 }
 
 .example__progress-block {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 219px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $width-tablet) {
+    width: 570px;
+  }
+}
+
+.example__progress-range {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $border;
+  border-radius: 10px;
+  background-color: $white;
+
+  @media (min-width: $width-tablet) {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
+}
+
+.example__progress-toggle {
+  width: 45%;
+  height: 6px;
+  margin: 3px 5px;
+  background-color: $green;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    box-sizing: content-box;
+    position: absolute;
+    top: -17px;
+    left: 45%;
+    width: 8px;
+    height: 8px;
+    background-color: $green;
+    border: 13px solid $white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
 }
 
 .example__progress-button {
@@ -195,4 +243,13 @@
   background-color: transparent;
 
   border: none;
+
+  @media (min-width: $width-tablet) {
+    @include text(20px, 20px);
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 7px;
+    border-bottom: 1px dotted $border;
+  }
 }
