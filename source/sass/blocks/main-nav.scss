@@ -3,6 +3,7 @@
 
   @media (min-width: $width-tablet) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -16,6 +17,9 @@
 
   @media (min-width: $width-tablet) {
     width: 260px;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-right: 7px;
   }
 
   @media (min-width: $width-desktop) {
@@ -25,6 +29,11 @@
 
 .main-nav__logo {
   display: block;
+
+  @media (min-width: $width-tablet) {
+    width: 174px;
+    height: 59px;
+  }
 }
 
 .main-nav__list {
@@ -46,8 +55,8 @@
 .main-nav__toggle {
   position: absolute;
 
-  top: 9px;
-  right: 2px;
+  top: 11px;
+  right: 5px;
 
   display: block;
   width: 25px;

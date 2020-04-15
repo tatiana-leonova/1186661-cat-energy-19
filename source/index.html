@@ -8,6 +8,40 @@
     заказать подходящую систему питания для вашего кота">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url("img/pg-mobile-menu.png");
+  }
+  /* Планшет */
+  @media (min-width: 768px) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url("img/pg-index-tablet.png");
+    }
+  }
+  /* Десктоп */
+  @media (min-width: 1300px) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url("img/pg-index-desktop.png");
+    }
+  }
+
+  BODY {
+    opacity: 0.5;
+  }
+</style>
+<!-- <link rel="stylesheet" href="../pixel-glass/styles.css">
+<script src="../pixel-glass/script.js"></script> -->
+<link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js" ></script>
+<!-- // Pixel Glass -->
+
 </head>
 
 <body>
@@ -63,16 +97,16 @@
     <section class="nutrition-programs container">
       <h2 class="visually-hidden">Варианты программ питания для котов</h2>
       <ul class="nutrition-programs__list">
-        <li class="nutrition-programs__item programs-item">
+        <li class="nutrition-programs__item programs-item programs-item--slim">
           <h3 class="programs-item__title programs-item__title--slim">Похудение</h3>
-          <p class="programs-item__description">Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить
+          <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить
             по&nbsp;деревьям?
             Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <a class="programs-item__link" href="catalog.html">Каталог Slim</a>
         </li>
 
-        <li class="nutrition-programs__item programs-item">
+        <li class="nutrition-programs__item programs-item programs-item--mass">
           <h3 class="programs-item__title programs-item__title--mass">Набор массы</h3>
           <p class="programs-item__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -95,7 +129,7 @@
           Замените один-два приема обычной еды на&nbsp;наше функциональное питание.
         </li>
         <li class="instruction__item instruction__item--clock">
-          Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!
+          Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!
         </li>
       </ol>
     </section>
@@ -105,8 +139,8 @@
         <div class="example__wrapper-text">
           <h3 class="example__title">Живой пример</h3>
           <p class="example__description">
-            Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек
+            Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy&nbsp;Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
             и&nbsp;по-прежнему
             спит по&nbsp;16&nbsp;часов
             в&nbsp;день.
@@ -163,12 +197,12 @@
         <div class="contacts__map">
           <iframe class="contacts__map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.9750205566963!2d30.322076840808084!3d59.938765264719976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1586253181213!5m2!1sru!2sru"
-            width="320" height="400" tabindex="0" aria-label="Интерактивная карта">
+            width="320" height="360" tabindex="0" aria-label="Интерактивная карта">
           </iframe>
           <picture>
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400"
+            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" width="320" height="361"
               alt="Месторасположение магазина Кэт энерджи на карте">
           </picture>
         </div>
@@ -192,7 +226,7 @@
             HTML Academy
           </a>
           <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="35" height="45">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="41" height="45">
               <path fill="#444444"
                 d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
             </svg>

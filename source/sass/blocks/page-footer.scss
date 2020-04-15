@@ -13,8 +13,8 @@
 .page-footer__logo {
   text-align: center;
 
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 38px;
+  padding-bottom: 27px;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $width-tablet) {
@@ -34,7 +34,7 @@
 
 .page-footer__social {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $width-tablet) {
@@ -43,6 +43,6 @@
 }
 
 .page-footer__copyright {
-  padding-top: 15px;
+  padding-top: 13px;
   padding-bottom: 15px;
 }

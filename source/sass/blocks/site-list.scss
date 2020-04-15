@@ -18,7 +18,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
 
   border-bottom: 1px solid $bg-grey;
@@ -27,12 +27,18 @@
     @include text(18px, 25px);
     font-weight: 400;
     border-bottom: none;
-    margin-right: 25px;
+    margin-right: 35px;
   }
 
   @media (min-width: $width-desktop) {
     @include text(20px, 25px);
     margin-right: 35px;
+  }
+
+  &:last-child {
+    @media (min-width: $width-tablet) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -54,6 +60,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 6px;
   }
 }
 

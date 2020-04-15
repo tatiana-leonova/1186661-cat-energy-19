@@ -1,5 +1,9 @@
 .instruction {
-  margin-bottom: 20px;
+  margin-bottom: 47px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .instruction__title {
@@ -7,9 +11,11 @@
   font-family: $font-title;
   color: $title;
   font-weight: 400;
+  margin-top: 0;
 
   @media (min-width: $width-tablet) {
     @include text(60px, 60px);
+    margin-bottom: 75px;
   }
 }
 
@@ -21,26 +27,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-right: 25px;
   }
 }
 
 .instruction__item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   padding-left: 80px;
 
   @media (min-width: $width-tablet) {
     @include text(16px, 24px);
     padding-left: 0;
     padding-right: 50px;
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding-top: 110px;
+    padding-bottom: 60px;
+
+    margin-bottom: 75px;
     width: 300px;
   }
 
   &::before {
     @include pseudo($display: block, $pos: absolute, $content: "");
-    top: 0;
+    top: -2px;
     left: 0;
 
     background-color: $green;
