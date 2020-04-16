@@ -15,7 +15,7 @@
 
   @media (min-width: $width-tablet) {
     @include text(60px, 60px);
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 }
 
@@ -30,6 +30,10 @@
 
     margin-right: 25px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 0;
+  }
 }
 
 .instruction__item {
@@ -42,10 +46,18 @@
     padding-left: 0;
     padding-right: 50px;
     padding-top: 110px;
-    padding-bottom: 60px;
 
-    margin-bottom: 75px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+    min-height: 290px;
     width: 300px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
+    padding-top: 108px;
+    padding-right: 0;
   }
 
   &::before {
@@ -67,8 +79,8 @@
   &::after {
     @media (min-width: $width-tablet) {
       @include pseudo($display: block, $pos: absolute, $content: "");
-      top: 77px;
-      left: 108px;
+      top: 75px;
+      left: 106px;
       z-index: -1;
       counter-increment: myCounter;
       content: counter(myCounter);

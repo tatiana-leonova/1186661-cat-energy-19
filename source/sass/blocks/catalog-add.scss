@@ -14,8 +14,9 @@
   position: relative;
   z-index: 1;
 
-  padding-left: 30px;
   padding-right: 30px;
+  margin-top: 27px;
+  margin-bottom: 32px;
 
   @include text(24px, 24px);
   font-family: $font-title;
@@ -27,6 +28,9 @@
 
   @media (min-width: $width-tablet) {
     @include text(36px, 36px);
+    margin-top: 0;
+    padding-left: 37px;
+    margin-bottom: 81px;
   }
 }
 

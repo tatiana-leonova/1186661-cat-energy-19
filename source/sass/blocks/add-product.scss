@@ -1,10 +1,12 @@
 .add-product {
+  border-bottom: 1px solid $border;
+  padding-bottom: 17px;
+
   @media (min-width: $width-tablet) {
-    border: 1px solid #cecece;
-    padding-left: 40px;
+    border: 1px solid $border-gray;
+    padding-left: 39px;
     padding-right: 40px;
     padding-bottom: 20px;
-    margin-top: -1px;
   }
 
   @media (min-width: $width-desktop) {
@@ -35,11 +37,13 @@
   font-family: $font-title;
   font-weight: 400;
   color: $title;
+  margin-bottom: 8px;
 
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
+    margin-top: 24px;
   }
 
   @media (min-width: $width-desktop) {
@@ -49,6 +53,9 @@
 }
 
 .add-product__characteristics-list {
+  width: 100%;
+  margin-bottom: 10px;
+
   @media (min-width: $width-tablet) {
     @include text(16px, 20px);
   }

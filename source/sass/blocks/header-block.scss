@@ -34,7 +34,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 350px;
+    margin-top: 30px;
+    margin-bottom: 270px;
   }
 }
 
@@ -62,6 +63,10 @@
     color: $title;
     text-align: left;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 80px;
+  }
 }
 
 .header-block__subtitle {
@@ -77,6 +82,11 @@
     text-align: left;
     margin-left: 88px;
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 80px;
+    margin-bottom: 53px;
   }
 }
 
@@ -102,7 +112,7 @@
     width: 552px;
     height: 499px;
 
-    top: -35px;
+    top: -53px;
     left: 490px;
   }
 }
@@ -121,6 +131,7 @@
 
   @media (min-width: $width-desktop) {
     width: 245px;
+    margin-left: 80px;
   }
 
   &:hover {

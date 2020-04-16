@@ -17,7 +17,7 @@
       bottom: 0;
       left: 0;
 
-      height: 462px;
+      height: 475px;
       width: 100%;
       background-image: linear-gradient(to right, $bg-grey 50%, #eaeaea 50%);
 
@@ -61,8 +61,10 @@
 
   margin-bottom: 34px;
 
+
   @media (min-width: $width-desktop) {
-    width: 410px;
+    width: 407px;
+    margin-bottom: 37px;
   }
 }
 
@@ -77,10 +79,14 @@
 
   @media (min-width: $width-tablet) {
     @include text(60px, 60px);
+    width: 450px;
+    margin-top: 23px;
+    margin-bottom: 64px;
   }
 
-  @media (min-width: $width-tablet) {
-    width: 450px;
+  @media (min-width: $width-desktop) {
+    margin-bottom: 146px;
+    margin-top: 0;
   }
 }
 
@@ -108,6 +114,7 @@
 
   @media (min-width: $width-tablet) {
     @include text(30px, 37px);
+    padding-bottom: 2px;
   }
 }
 
@@ -121,7 +128,7 @@
 
   @media (min-width: $width-tablet) {
     @include text(14px, 14px);
-    margin-bottom: -22px;
+    margin-bottom: -21px;
     margin-left: 17px;
     margin-right: 17px;
     background-color: $white;
@@ -142,7 +149,13 @@
   }
 
   @media (min-width: $width-tablet) {
+    width: 680px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $width-desktop) {
     width: 450px;
+    margin-bottom: 53px;
   }
 }
 
@@ -159,6 +172,7 @@
     @include text(20px, 20px);
     width: 190px;
     text-align: right;
+    padding-top: 5px;
   }
 
   @media (min-width: $width-desktop) {
@@ -168,8 +182,13 @@
 }
 
 .example__cost-food-span {
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
   @media (min-width: $width-desktop) {
-    margin-right: 50px;
+    margin-right: 60px;
   }
 }
 
@@ -182,14 +201,17 @@
 .example__image {
   display: block;
 
-  max-width: 311px;
-
   margin-left: -15px;
 
   margin-bottom: 35px;
 
+  @media (min-width: $mobile-width-only) {
+    max-width: 311px;
+  }
+
   @media (min-width: $width-tablet) {
     height: 499px;
+    width: 700px;
     max-width: 700px;
   }
 

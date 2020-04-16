@@ -3,7 +3,7 @@
 
   &::after {
     @include pseudo($display: block, $pos: absolute, $content: "");
-    top: 35px;
+    top: 40px;
     right: 0;
 
     width: 65%;
@@ -11,8 +11,27 @@
     background-color: $green;
 
     @media (min-width: $width-tablet) {
-      top: 55px;
+      top: 22px;
       width: 100%;
     }
   }
 }
+
+// .title-line {
+//   position: relative;
+
+//   &::after {
+//     @include pseudo($display: block, $pos: absolute, $content: "");
+//     top: 35px;
+//     right: 0;
+
+//     width: 65%;
+//     height: 3px;
+//     background-color: $green;
+
+//     @media (min-width: $width-tablet) {
+//       top: 22px;
+//       width: 100%;
+//     }
+//   }
+// }

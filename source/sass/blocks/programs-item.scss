@@ -26,11 +26,19 @@
   @media (min-width: $width-tablet) {
     padding-right: 275px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 35px;
+  }
 }
 
 .programs-item--mass {
   @media (min-width: $width-tablet) {
     padding-right: 315px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 35px;
   }
 }
 
@@ -53,8 +61,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-left: 160px;
-    margin-bottom: 70px;
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   &::before {
@@ -131,8 +139,8 @@
     }
 
     @media (min-width: $width-desktop) {
-      top: -5px;
-      left: -20px;
+      top: -8px;
+      left: -18px;
 
       @include image-size(134px, 57px);
     }
@@ -153,6 +161,7 @@
 
   @media (min-width: $width-desktop) {
     padding-right: 0;
+    margin-bottom: 10px;
   }
 }
 
