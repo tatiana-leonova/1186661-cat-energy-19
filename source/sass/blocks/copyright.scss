@@ -10,8 +10,13 @@
   color: $text;
 
   text-decoration: none;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 16px;
+  }
 }
 
 .copyright__link-icon {
   padding-top: 4px;
+  margin-right: -6px;
 }

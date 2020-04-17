@@ -1,6 +1,14 @@
 .catalog-add {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 37px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 15px;
+  }
 }
 
 .catalog-add__wrapper {
@@ -32,8 +40,19 @@
     padding-left: 37px;
     margin-bottom: 81px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 39px;
+    margin-left: -39px;
+  }
 }
 
 .catalog-add__list {
   @include no-list;
+
+  margin-bottom: 42px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 70px;
+  }
 }
