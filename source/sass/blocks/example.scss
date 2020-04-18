@@ -208,8 +208,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    // align-self: flex-start;
-    // margin-top: -55px;
+    align-self: flex-end;
+    margin-bottom: 55px;
   }
 }
 
@@ -245,10 +245,6 @@
   @media (max-width: $mobile-width-only) {
     background-color: $bg-grey;
   }
-
-  // @media (min-width: $width-tablet) {
-  //   width: 708px;
-  // }
 }
 
 .example__image-wrapper--after {
@@ -259,7 +255,7 @@
 
   @media (min-width: $width-desktop) {
     overflow: hidden;
-    background-image: linear-gradient(to top, #eaeaea 361px, $white 361px);
+    background-image: linear-gradient(to top, #eaeaea 362px, $white 362px);
   }
 }
 
@@ -275,7 +271,7 @@
 
   @media (min-width: $width-desktop) {
     overflow: hidden;
-    background-image: linear-gradient(to top, $bg-grey 361px, $white 361px);
+    background-image: linear-gradient(to top, $bg-grey 362px, $white 362px);
   }
 }
 
@@ -295,7 +291,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    bottom: 25px;
+    bottom: -30px;
     left: 36px;
   }
 }
