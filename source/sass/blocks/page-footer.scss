@@ -20,6 +20,10 @@
   @media (min-width: $width-tablet) {
     border-bottom: none;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 35px;
+  }
 }
 
 .page-footer__inner {
@@ -44,11 +48,12 @@
 
 .page-footer__social {
   padding-top: 20px;
-  padding-bottom: 23px;
+  // padding-bottom: 23px;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $width-tablet) {
     border-bottom: none;
+    padding-top: 26px;
   }
 }
 

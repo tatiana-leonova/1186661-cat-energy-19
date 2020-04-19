@@ -15,9 +15,8 @@
     width: 324px;
     padding-left: 40px;
     padding-right: 40px;
-
     background-color: $bg-grey;
-    padding-bottom: 40px;
+    padding-bottom: 41px;
     margin-bottom: 137px;
 
     &:nth-last-child(2),
@@ -29,6 +28,7 @@
 
   @media (min-width: $width-desktop) {
     width: 245px;
+    padding-bottom: 40px;
     margin-bottom: 139px;
 
     &:nth-last-child(4),
@@ -86,11 +86,9 @@
   @include text(16px, 20px);
   font-family: $font-title;
   font-weight: 400;
-
   width: 85px;
   margin-top: 21px;
   margin-bottom: 12px;
-
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
@@ -134,6 +132,8 @@
   @media (min-width: $width-tablet) {
     @include text(16px, 16px);
     border-collapse: collapse;
+    margin-right: -3px;
+    margin-left: -3px;
   }
 }
 

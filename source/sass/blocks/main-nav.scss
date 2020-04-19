@@ -9,7 +9,6 @@
 
 .main-nav__wrapper {
   position: relative;
-
   width: $width-mobile;
   margin: 0 auto;
   padding: 0 20px;
@@ -73,19 +72,14 @@
 
 .main-nav__toggle {
   position: absolute;
-
   top: 11px;
   right: 5px;
-
   display: block;
   width: 25px;
   height: 19px;
-
   background-color: transparent;
-
   cursor: pointer;
   border: none;
-
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
 

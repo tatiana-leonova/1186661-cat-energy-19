@@ -7,9 +7,7 @@
   @media (min-width: $width-tablet) {
     z-index: 1;
     background-color: $white;
-
     border-top: 1px solid $bg-grey;
-
     padding-bottom: 79px;
 
     &::before {
@@ -18,7 +16,6 @@
       @include pseudo($display: block, $pos: absolute, $content: "");
       bottom: 0;
       left: 0;
-
       height: 463px;
       width: 100%;
       background-image: linear-gradient(to right, $bg-grey 50%, #eaeaea 50%);
@@ -68,7 +65,6 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-
   margin-bottom: 34px;
 
 
@@ -83,7 +79,6 @@
   font-family: $font-title;
   color: $title;
   font-weight: 400;
-
   margin-top: 0;
   margin-bottom: 25px;
 
@@ -104,7 +99,6 @@
   width: 124px;
   border: 1px solid #cfcfcf;
   border-radius: 3px;
-
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -175,7 +169,6 @@
   font-weight: 400;
   color: $title;
   text-transform: uppercase;
-
   text-align: center;
 
   @media (min-width: $width-tablet) {
@@ -225,10 +218,8 @@
 
 .example__image {
   display: block;
-
-  margin-left: -15px;
+  margin-left: -33px;
   margin-bottom: 35px;
-
   max-width: none;
 
   @media (min-width: $width-tablet) {
@@ -285,12 +276,12 @@
 
   @media (min-width: $width-tablet) {
     position: absolute;
-    bottom: -9px;
+    bottom: -10px;
     left: 33px;
     width: 605px;
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-desktop) {
     bottom: -30px;
     left: 36px;
   }
@@ -345,7 +336,6 @@
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
-
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 5px;

@@ -5,7 +5,6 @@
   margin-bottom: 16px;
   padding-top: 10px;
   padding-bottom: 20px;
-
   background-color: $bg-grey;
 
   @media (min-width: $width-tablet) {
@@ -13,7 +12,6 @@
     padding-right: 20px;
     padding-bottom: 60px;
     padding-top: 76px;
-
     margin-bottom: 28px;
   }
 
@@ -69,26 +67,21 @@
     @include pseudo($display: block, $pos: absolute, $content: "");
     top: -6px;
     left: 2px;
-
     background-color: $green;
     border-radius: 50%;
-
     width: 50px;
     height: 50px;
 
     @media (min-width: $width-tablet) {
       left: 393px;
       top: 15px;
-
       width: 200px;
       height: 200px;
     }
 
     @media (min-width: $width-desktop) {
-
       top: -30px;
       left: 0;
-
       width: 100px;
       height: 100px;
     }
@@ -173,7 +166,6 @@
   font-weight: 400;
   color: $title;
   text-transform: uppercase;
-
   text-decoration: none;
 
   &::after {

@@ -10,10 +10,8 @@
   font-family: $font-title;
   font-weight: 400;
   color: $title;
-
   padding-top: 16px;
   padding-bottom: 28px;
-
   border-bottom: 1px solid $bg-grey;
 
   @media (min-width: $width-tablet) {
@@ -32,9 +30,7 @@
   font-family: $font-title;
   font-weight: 400;
   color: $title;
-
   text-transform: uppercase;
-
   padding-top: 22px;
   padding-right: 22px;
   padding-bottom: 20px;

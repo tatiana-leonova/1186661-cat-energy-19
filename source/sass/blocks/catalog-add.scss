@@ -21,8 +21,9 @@
 .catalog-add__title {
   position: relative;
   z-index: 1;
-
-  padding-right: 30px;
+  margin-left: -22px;
+  padding-right: 22px;
+  padding-left: 22px;
   margin-top: 27px;
   margin-bottom: 32px;
 
@@ -30,14 +31,15 @@
   font-family: $font-title;
   font-weight: 400;
   color: $subtitle;
-
   display: inline-block;
   background-color: $white;
 
   @media (min-width: $width-tablet) {
     @include text(36px, 36px);
     margin-top: 0;
+    margin-left: 0;
     padding-left: 37px;
+    padding-right: 30px;
     margin-bottom: 81px;
   }
 

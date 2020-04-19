@@ -14,7 +14,6 @@
   @media (min-width: $width-desktop) {
     display: flex;
     justify-content: space-between;
-
     width: 895px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -46,7 +45,6 @@
   font-weight: 400;
   color: $title;
   margin-bottom: 8px;
-
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {

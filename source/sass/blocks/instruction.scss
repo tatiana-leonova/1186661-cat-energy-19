@@ -27,7 +27,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     margin-right: 25px;
   }
 
@@ -46,7 +45,6 @@
     padding-left: 0;
     padding-right: 50px;
     padding-top: 110px;
-
     margin-top: 25px;
     margin-bottom: 0;
     // padding-bottom: 60px;
@@ -67,9 +65,7 @@
     @include pseudo($display: block, $pos: absolute, $content: "");
     top: -2px;
     left: 0;
-
     background-color: $green;
-
     width: 60px;
     height: 60px;
 

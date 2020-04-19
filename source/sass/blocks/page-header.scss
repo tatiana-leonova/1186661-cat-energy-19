@@ -31,7 +31,6 @@
 }
 
 .page-header__wrapper {
-
   border-bottom: 1px solid $bg-grey;
 
   @media (min-width: $mobile-width-only) {
@@ -43,7 +42,6 @@
   @media (min-width: $width-tablet) {
     width: $width-tablet;
     padding: 0 30px;
-
     border-bottom: none;
     display: flex;
     justify-content: space-between;
