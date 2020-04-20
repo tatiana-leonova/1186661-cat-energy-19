@@ -12,14 +12,13 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-
   border: none;
 
   @media (min-width: $width-tablet) {
-    width: 249px;
+    width: 247px;
   }
 
   @media (min-width: $width-desktop) {
-    width: 169px;
+    width: 167px;
   }
 }

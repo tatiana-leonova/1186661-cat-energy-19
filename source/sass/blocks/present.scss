@@ -1,8 +1,6 @@
 .present {
-  min-height: 289px;
-
+  margin-bottom: 10px;
   text-align: center;
-
   background-color: $green;
   background-image: url("../img/gift-photo-desktop@1x.jpg");
   background-position: center;
@@ -15,7 +13,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    min-height: 289px;
+    height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     width: 245px;
   }
@@ -28,7 +26,7 @@
   font-weight: 400;
   color: $white;
 
-  padding-top: 190px;
+  padding-top: 187px;
   padding-right: 50px;
   padding-bottom: 40px;
   padding-left: 50px;
@@ -36,25 +34,24 @@
   @media (min-width: $width-tablet) {
     width: 620px;
     text-align: left;
-    padding-top: 70px;
+    padding-top: 71px;
     padding-bottom: 40px;
     padding-right: 20px;
-    padding-left: 420px;
+    padding-left: 423px;
 
     @media (min-width: $width-desktop) {
       width: 245px;
-      padding-top: 150px;
+      padding-top: 170px;
       padding-right: 30px;
       padding-bottom: 20px;
       padding-left: 30px;
-
       text-align: center;
     }
   }
 
   &::before {
     @include pseudo($display: block, $pos: absolute, $content: "");
-    top: 70px;
+    top: 66px;
     left: 113px;
 
     @include image-size(56px, 61px);
@@ -62,13 +59,13 @@
     background-repeat: no-repeat;
 
     @media (min-width: $width-tablet) {
-      top: 70px;
-      left: 100px;
+      top: 65px;
+      left: 90px;
     }
 
     @media (min-width: $width-desktop) {
-      top: 50px;
-      left: 100px;
+      top: 49px;
+      left: 96px;
     }
   }
 }

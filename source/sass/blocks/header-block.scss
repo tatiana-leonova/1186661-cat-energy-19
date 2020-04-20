@@ -1,7 +1,6 @@
 .header-block {
   position: relative;
   margin-bottom: 20px;
-
   font-family: $font-title;
   font-weight: 400;
   text-align: center;
@@ -14,35 +13,27 @@
     left: 0;
     right: 0;
     z-index: -1;
-
     height: 305px;
-    background-color: #63a73a;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-position: top center;
     background-repeat: no-repeat;
 
-    @media (min-width: $width-tablet) {
-      background-color: $white;
-      background-image: none;
+    @media (max-width: $mobile-width-only) {
+      background-color: #63a73a;
     }
 
-    @media (min-width: $width-desktop) {
-      @include pseudo($display: block, $pos: absolute, $content: "");
-      top: -175px;
-      left: 50%;
-      height: 696px;
-      background-color: #63a73a;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-position: top left;
+    @media (min-width: $width-tablet) {
+      background-image: none;
     }
   }
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 570px;
+    margin-bottom: 530px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 350px;
+    margin-top: 30px;
+    margin-bottom: 270px;
   }
 }
 
@@ -60,14 +51,19 @@
   @include text(36px, 36px);
   font-weight: 400;
   margin-bottom: 25px;
-  padding-top: 30px;
+  padding-top: 27px;
 
   @media (min-width: $width-tablet) {
     @include text(60px, 60px);
-    margin-left: 100px;
+    margin-left: 88px;
+    margin-bottom: 41px;
     width: 500px;
     color: $title;
     text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 80px;
   }
 }
 
@@ -75,14 +71,20 @@
   @include zero-indent;
   @include text(14px, 14px);
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
     width: 500px;
     color: $title;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 88px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 80px;
+    margin-bottom: 53px;
   }
 }
 
@@ -90,14 +92,13 @@
   display: block;
   position: relative;
   margin: 0 auto;
+  margin-bottom: 5px;
 
   @media (min-width: $width-tablet) {
     width: 709px;
     height: 609px;
-
-    top: 225px;
-    left: 35px;
-
+    top: 227px;
+    left: 30px;
     z-index: -1;
 
     @include pseudo($display: block, $pos: absolute, $content: "");
@@ -106,8 +107,7 @@
   @media (min-width: $width-desktop) {
     width: 552px;
     height: 499px;
-
-    top: -35px;
+    top: -53px;
     left: 490px;
   }
 }
@@ -119,13 +119,14 @@
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
-    margin-left: 100px;
+    margin-left: 88px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
   @media (min-width: $width-desktop) {
     width: 245px;
+    margin-left: 80px;
   }
 
   &:hover {
