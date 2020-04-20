@@ -42,7 +42,10 @@
   <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
   <!-- // Pixel Glass -->
 
-  <script src="picturefill.min.js" async></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -87,10 +90,10 @@
         <p class="header-block__subtitle">Занялся собой? Займись котом!</p>
 
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="header-block__image" src="img/index-can-mobile@1x.png" width="280" height="270"
-            alt="Изображение функционального питания Кэт энерджи Pro со вкусом курицы">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="header-block__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+            width="280" height="270" alt="Изображение функционального питания Кэт энерджи Pro со вкусом курицы">
         </picture>
         <a class="header-block__button button" href="form.html">Подобрать программу</a>
       </div>
@@ -168,18 +171,18 @@
           <div class="example__image-block">
             <div class="example__image-wrapper example__image-wrapper--before">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232"
-                  alt="Изображение кота до приема функционального питания Кэт энерджи">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                  width="311" height="232" alt="Изображение кота до приема функционального питания Кэт энерджи">
               </picture>
             </div>
             <div class="example__image-wrapper example__image-wrapper--after">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img class="example__image" src="img/after-mobile@1x.png" width="311" height="232"
-                  alt="Изображение кота после приема функционального питания Кэт энерджи">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                  width="311" height="232" alt="Изображение кота после приема функционального питания Кэт энерджи">
               </picture>
             </div>
           </div>
@@ -216,17 +219,17 @@
             width="320" height="360" tabindex="0" aria-label="Интерактивная карта">
           </iframe>
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" width="320" height="361"
-              alt="Месторасположение магазина Кэт энерджи на карте">
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+              width="320" height="361" alt="Месторасположение магазина Кэт энерджи на карте">
           </picture>
         </div>
       </div>
       <div class="page-footer__inner container">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="#">
-            <img src="img/logo-footer.svg" width="138" height="24" alt="Логотип Кэт энерджи">
+            <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
           </a>
         </div>
         <div class="page-footer__social social">
