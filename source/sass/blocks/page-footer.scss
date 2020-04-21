@@ -12,13 +12,13 @@
 
 .page-footer__logo {
   text-align: center;
-
   padding-top: 38px;
   padding-bottom: 27px;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $width-tablet) {
     border-bottom: none;
+    padding-right: 10px;
   }
 
   @media (min-width: $width-desktop) {

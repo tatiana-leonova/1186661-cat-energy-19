@@ -18,6 +18,12 @@
     background-position: top center;
     background-repeat: no-repeat;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 320px 305px;
+    }
+
     @media (max-width: $mobile-width-only) {
       background-color: #63a73a;
     }
