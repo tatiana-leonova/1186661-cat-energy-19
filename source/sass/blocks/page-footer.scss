@@ -26,6 +26,17 @@
   }
 }
 
+.page-footer__logo-link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-footer__inner {
   @media (min-width: $width-tablet) {
     display: flex;

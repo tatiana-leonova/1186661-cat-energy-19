@@ -56,6 +56,22 @@
   font-weight: 400;
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $border;
+  }
+
+  &:focus:invalid {
+    border: 1px solid $error;
+    box-shadow: inset 0 0 1px 1px $error;
+  }
+
+  &:active {
+    border: 1px solid $text;
+    box-shadow: inset 0 0 1px 1px $text;
+  }
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
@@ -141,6 +157,21 @@
   }
 }
 
+.form__row--cat-owner-email,
+.form__row--cat-owner-tel {
+  &:focus:invalid {
+    svg {
+      fill: $error;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+    }
+  }
+}
+
 .form__row--cat-owner-email {
   position: relative;
 
@@ -220,7 +251,6 @@
 }
 
 .form__input--radio {
-  // display: none;
   appearance: none;
   opacity: 0;
 }
@@ -263,6 +293,27 @@
       height: 18px;
     }
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before {
+      border: 1px solid #bababa;
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
 
   @media (min-width: $width-tablet) {
     padding-left: 11px;
@@ -358,6 +409,11 @@
   padding-bottom: 12px;
   padding-left: 15px;
 
+  // &:focus:invalid {
+  //   border: 1px solid $error;
+  //   box-shadow: 0 0 1px 1px $error;
+  // }
+
   @media (min-width: $width-tablet) {
     padding-top: 10px;
     padding-right: 20px;
@@ -429,10 +485,28 @@
     border-right-style: none;
 
     @media (min-width: $width-tablet) {
-      // padding-left: 30px;
-      // padding-rigth: 30px;
       top: 3px;
       left: -48px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before {
+      border: 1px solid #bababa;
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 0.3;
     }
   }
 }
@@ -486,6 +560,18 @@
 
 .form__button {
   margin-bottom: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);

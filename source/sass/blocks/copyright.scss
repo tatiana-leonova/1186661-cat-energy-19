@@ -10,6 +10,10 @@
   color: $text;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $width-tablet) {
     margin-right: 16px;
   }
@@ -18,4 +22,18 @@
 .copyright__link-icon {
   padding-top: 4px;
   margin-right: -6px;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
 }

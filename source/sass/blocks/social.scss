@@ -41,6 +41,20 @@
       @include image-size(30px, 16px);
     }
   }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__item--instagram {
@@ -49,12 +63,40 @@
       @include image-size(23px, 23px);
     }
   }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__item--facebook {
   svg {
     @media (min-width: $width-tablet) {
       @include image-size(14px, 28px);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
     }
   }
 }
