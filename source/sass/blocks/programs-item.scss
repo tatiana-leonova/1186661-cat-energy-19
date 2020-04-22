@@ -147,7 +147,6 @@
 
   @media (min-width: $width-tablet) {
     @include text(16px, 24px);
-    // padding-right: 264px;
     margin-bottom: 35px;
     border-bottom: none;
   }
