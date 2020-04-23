@@ -139,6 +139,7 @@
 
   @media (min-width: $width-desktop) {
     margin-left: -40px;
+    margin-bottom: 77px;
   }
 }
 
@@ -153,7 +154,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 }
 
@@ -189,6 +190,8 @@
 }
 
 .form__icon--field-email {
+  width: 18px;
+  height: 14px;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -199,7 +202,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 22px;
+    top: 19px;
     right: 13px;
   }
 }
@@ -212,6 +215,8 @@
   position: absolute;
   top: 12px;
   right: 12px;
+  width: 21px;
+  height: 21px;
 
   @media (min-width: $width-tablet) {
     top: 17px;
@@ -219,7 +224,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 19px;
+    top: 17px;
     right: 18px;
   }
 }
