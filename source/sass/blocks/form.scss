@@ -58,19 +58,31 @@
   border: 1px solid #e6e6e6;
   outline: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid $border;
+  }
+
+  // &:focus + .form__row--cat-owner-email,
+  // &:focus + .form__row--cat-owner-tel {
+  //   fill: $green;
+  // }
+
+  &:focus {
+    border: 1px solid $text;
+    box-shadow: inset 0 0 1px 1px $text;
+
+    svg {
+      fill: $green;
+    }
   }
 
   &:focus:invalid {
     border: 1px solid $error;
     box-shadow: inset 0 0 1px 1px $error;
-  }
 
-  &:active {
-    border: 1px solid $text;
-    box-shadow: inset 0 0 1px 1px $text;
+    svg {
+      fill: $error;
+    }
   }
 
   @media (min-width: $width-tablet) {
@@ -158,20 +170,20 @@
   }
 }
 
-.form__row--cat-owner-email,
-.form__row--cat-owner-tel {
-  &:focus:invalid {
-    svg {
-      fill: $error;
-    }
-  }
+// .form__row--cat-owner-email,
+// .form__row--cat-owner-tel {
+//   &:focus {
+//     svg {
+//       fill: $green;
+//     }
+//   }
 
-  &:active {
-    svg {
-      fill: $green;
-    }
-  }
-}
+//   // &:focus:invalid {
+//   //   svg {
+//   //     fill: $error;
+//   //   }
+//   // }
+// }
 
 .form__row--cat-owner-email {
   position: relative;

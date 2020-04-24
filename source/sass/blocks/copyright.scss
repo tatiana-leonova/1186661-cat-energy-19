@@ -2,6 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    svg {
+      fill: $green;
+    }
+  }
 }
 
 .copyright__link-text {
@@ -23,18 +39,4 @@
   fill: $icon;
   padding-top: 4px;
   margin-right: -6px;
-
-  &:hover,
-  &:focus {
-    svg {
-      fill: $green;
-    }
-  }
-
-  &:active {
-    svg {
-      fill: $green;
-      opacity: 0.3;
-    }
-  }
 }
