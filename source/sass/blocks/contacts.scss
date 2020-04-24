@@ -94,6 +94,11 @@
     background-repeat: no-repeat;
     background-size: 100%;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png");
+      background-size: 61px auto;
+    }
+
     @media (min-width: $width-tablet) {
       top: 147px;
       left: calc(50% - 60px);

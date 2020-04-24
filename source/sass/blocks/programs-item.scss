@@ -147,7 +147,6 @@
 
   @media (min-width: $width-tablet) {
     @include text(16px, 24px);
-    // padding-right: 264px;
     margin-bottom: 35px;
     border-bottom: none;
   }
@@ -179,6 +178,20 @@
     @media (min-width: $width-tablet) {
       top: 10px;
       right: -48px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+      width: 34px;
+      height: 12px;
+      top: 10px;
+      right: -57px;
+
+      // transform: translateX(2px);
+      // transition: transform 0.3s;
     }
   }
 

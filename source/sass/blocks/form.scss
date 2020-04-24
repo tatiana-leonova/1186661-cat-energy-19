@@ -56,6 +56,34 @@
   font-weight: 400;
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $border;
+  }
+
+  // &:focus + .form__row--cat-owner-email,
+  // &:focus + .form__row--cat-owner-tel {
+  //   fill: $green;
+  // }
+
+  &:focus {
+    border: 1px solid $text;
+    box-shadow: inset 0 0 1px 1px $text;
+
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:focus:invalid {
+    border: 1px solid $error;
+    box-shadow: inset 0 0 1px 1px $error;
+
+    svg {
+      fill: $error;
+    }
+  }
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
@@ -123,6 +151,7 @@
 
   @media (min-width: $width-desktop) {
     margin-left: -40px;
+    margin-bottom: 77px;
   }
 }
 
@@ -137,9 +166,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 }
+
+// .form__row--cat-owner-email,
+// .form__row--cat-owner-tel {
+//   &:focus {
+//     svg {
+//       fill: $green;
+//     }
+//   }
+
+//   // &:focus:invalid {
+//   //   svg {
+//   //     fill: $error;
+//   //   }
+//   // }
+// }
 
 .form__row--cat-owner-email {
   position: relative;
@@ -158,6 +202,8 @@
 }
 
 .form__icon--field-email {
+  width: 18px;
+  height: 14px;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -168,7 +214,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 22px;
+    top: 19px;
     right: 13px;
   }
 }
@@ -181,6 +227,8 @@
   position: absolute;
   top: 12px;
   right: 12px;
+  width: 21px;
+  height: 21px;
 
   @media (min-width: $width-tablet) {
     top: 17px;
@@ -188,7 +236,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 19px;
+    top: 17px;
     right: 18px;
   }
 }
@@ -220,7 +268,6 @@
 }
 
 .form__input--radio {
-  // display: none;
   appearance: none;
   opacity: 0;
 }
@@ -263,6 +310,27 @@
       height: 18px;
     }
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before {
+      border: 1px solid #bababa;
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
 
   @media (min-width: $width-tablet) {
     padding-left: 11px;
@@ -375,7 +443,6 @@
   margin-bottom: 24px;
 
   @media (min-width: $width-tablet) {
-    // width: 50%;
     width: 250px;
     padding-left: 55px;
     margin-bottom: 52px;
@@ -388,7 +455,6 @@
 }
 
 .form__input--checkbox {
-  // display: none;
   appearance: none;
   opacity: 0;
 }
@@ -429,10 +495,28 @@
     border-right-style: none;
 
     @media (min-width: $width-tablet) {
-      // padding-left: 30px;
-      // padding-rigth: 30px;
       top: 3px;
       left: -48px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before {
+      border: 1px solid #bababa;
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 0.3;
     }
   }
 }
@@ -486,6 +570,18 @@
 
 .form__button {
   margin-bottom: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);

@@ -21,40 +21,84 @@
 
 .social__item {
   display: block;
-  // padding-left: 25px;
-  // padding-right: 30px;
   padding-left: 13px;
   padding-right: 25px;
-  // padding-bottom: 5px;
   margin-bottom: 18px;
 
   @media (min-width: $width-tablet) {
     padding-right: 15px;
     padding-left: 15px;
-    // padding-bottom: 22px;
   }
 }
 
 .social__item--vk {
   svg {
+    fill: $icon;
+
     @media (min-width: $width-tablet) {
       @include image-size(30px, 16px);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
     }
   }
 }
 
 .social__item--instagram {
   svg {
+    fill: $icon;
+
     @media (min-width: $width-tablet) {
       @include image-size(23px, 23px);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
     }
   }
 }
 
 .social__item--facebook {
   svg {
+    fill: $icon;
+
     @media (min-width: $width-tablet) {
       @include image-size(14px, 28px);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
     }
   }
 }
