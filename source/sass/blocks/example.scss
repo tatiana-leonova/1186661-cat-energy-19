@@ -21,15 +21,14 @@
       background-image: linear-gradient(to right, $bg-grey 50%, #eaeaea 50%);
 
       @media (min-width: $width-desktop) {
-        height: 462px;
-        background-image: linear-gradient(to right, $bg-grey calc(50% + 323px), #eaeaea calc(50% + 323px));
+        height: 460px;
       }
     }
   }
 
   @media (min-width: $width-desktop) {
     border-top: none;
-    padding-bottom: 45px;
+    padding-bottom: 0;
   }
 }
 
@@ -201,7 +200,6 @@
 
   @media (min-width: $width-desktop) {
     align-self: flex-end;
-    margin-bottom: 55px;
   }
 }
 
@@ -226,6 +224,7 @@
 
     @media (min-width: $width-desktop) {
       margin-left: -25px;
+      margin-bottom: 0;
     }
   }
 }
@@ -233,6 +232,10 @@
 .example__image-wrapper {
   @media (max-width: $mobile-width-only) {
     background-color: $bg-grey;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 133px;
   }
 }
 
@@ -244,7 +247,7 @@
 
   @media (min-width: $width-desktop) {
     overflow: hidden;
-    background-image: linear-gradient(to top, #eaeaea 362px, $white 362px);
+    background-image: linear-gradient(to top, #eaeaea 460px, $white 460px);
   }
 }
 
@@ -260,7 +263,7 @@
 
   @media (min-width: $width-desktop) {
     overflow: hidden;
-    background-image: linear-gradient(to top, $bg-grey 362px, $white 362px);
+    background-image: linear-gradient(to top, $bg-grey 460px, $white 450px);
   }
 }
 
@@ -280,7 +283,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    bottom: -30px;
+    bottom: 69px;
     left: 36px;
   }
 }
