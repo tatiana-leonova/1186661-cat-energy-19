@@ -18,6 +18,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var jsmin = require("gulp-jsmin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -104,11 +105,20 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("jsmin", async function () {
+  gulp.src("source/js/**/*.js")
+      .pipe(jsmin())
+      .pipe(rename({suffix: ".min"}))
+      .pipe(gulp.dest("build/js"))
+      .pipe(server.stream());
+});
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
   "sprite",
+  "jsmin",
   "html"
 ));
 
