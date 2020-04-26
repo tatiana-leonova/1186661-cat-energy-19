@@ -1,0 +1,15 @@
+.nutrition-programs {
+  @media (min-width: $width-tablet) {
+    margin-bottom: 45px;
+  }
+}
+
+.nutrition-programs__list {
+  @include no-list;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

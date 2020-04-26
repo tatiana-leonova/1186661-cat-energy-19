@@ -1,0 +1,81 @@
+.page-footer {
+  background-color: $bg-grey;
+}
+
+.page-footer__contacts--white {
+  background-color: $white;
+}
+
+.page-footer__contacts--grey {
+  background-color: $bg-grey;
+}
+
+.page-footer__logo {
+  text-align: center;
+  padding-top: 38px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 35px;
+  }
+}
+
+.page-footer__logo-link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__inner {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 26px;
+    padding-bottom: 30px;
+  }
+}
+
+.page-footer__social {
+  padding-top: 20px;
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+    padding-top: 26px;
+  }
+}
+
+.page-footer__copyright {
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 21px;
+  }
+}

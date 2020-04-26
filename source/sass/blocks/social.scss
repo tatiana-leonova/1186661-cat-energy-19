@@ -1,0 +1,104 @@
+.social__list {
+  @include no-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  // width: 180px;
+  // padding-right: 25px;
+  // padding-left: 25px;
+  width: 200px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 30px;
+    padding-right: 20px;
+    width: 207px;
+  }
+}
+
+.social__item {
+  display: block;
+  padding-left: 13px;
+  padding-right: 25px;
+  margin-bottom: 18px;
+
+  @media (min-width: $width-tablet) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.social__item--vk {
+  svg {
+    fill: $icon;
+
+    @media (min-width: $width-tablet) {
+      @include image-size(30px, 16px);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__item--instagram {
+  svg {
+    fill: $icon;
+
+    @media (min-width: $width-tablet) {
+      @include image-size(23px, 23px);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__item--facebook {
+  svg {
+    fill: $icon;
+
+    @media (min-width: $width-tablet) {
+      @include image-size(14px, 28px);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
+}

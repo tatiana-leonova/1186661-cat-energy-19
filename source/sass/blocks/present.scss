@@ -1,0 +1,89 @@
+.present {
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: $green;
+  background-image: url("../img/gift-photo-desktop@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+  }
+
+  @media (min-width: $width-tablet) {
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 708px auto;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    width: 245px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 245px auto;
+    }
+  }
+}
+
+.present__description {
+  @include text(16px, 20px);
+  position: relative;
+  font-family: $font-main;
+  font-weight: 400;
+  color: $white;
+
+  padding-top: 187px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+
+  @media (min-width: $width-tablet) {
+    width: 620px;
+    text-align: left;
+    padding-top: 71px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 423px;
+
+    @media (min-width: $width-desktop) {
+      width: 245px;
+      padding-top: 170px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      text-align: center;
+    }
+  }
+
+  &::before {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 66px;
+    left: 113px;
+
+    @include image-size(56px, 61px);
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $width-tablet) {
+      top: 65px;
+      left: 90px;
+    }
+
+    @media (min-width: $width-desktop) {
+      top: 49px;
+      left: 96px;
+    }
+  }
+}

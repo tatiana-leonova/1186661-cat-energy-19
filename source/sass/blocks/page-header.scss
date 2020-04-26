@@ -1,0 +1,66 @@
+.page-header {
+  position: relative;
+  padding-top: 11px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 18px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.page-header--index {
+  @media (min-width: $width-desktop) {
+    &::before {
+      @include pseudo($display: block, $pos: absolute, $content: "");
+      top: 0;
+      right: 0;
+      left: 50%;
+      height: 696px;
+      background-color: #63a73a;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: 720px auto;
+      }
+    }
+  }
+}
+
+.page-header__wrapper {
+  border-bottom: 1px solid $bg-grey;
+
+  @media (min-width: $mobile-width-only) {
+    width: $mobile-width-only;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding: 0 30px;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding: 0 40px;
+  }
+}
+
+.page-header__logo {
+  display: block;
+}

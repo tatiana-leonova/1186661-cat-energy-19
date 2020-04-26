@@ -1,0 +1,14 @@
+.catalog__list {
+  @include no-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 135px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 136px;
+  }
+}

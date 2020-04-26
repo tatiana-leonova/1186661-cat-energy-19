@@ -1,0 +1,24 @@
+.button {
+  @include text(16px, 20px);
+  font-family: $font-title;
+  font-weight: 400;
+  color: $white;
+  background-color: $green;
+  width: 280px;
+
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+
+  @media (min-width: $width-tablet) {
+    width: 247px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 167px;
+  }
+}
