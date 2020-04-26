@@ -87,6 +87,7 @@
 
 .form__input::placeholder {
   color: $text;
+  opacity: 1;
 }
 
 .form__wrapper {
@@ -416,6 +417,7 @@
 
 .form__input--field-cat-information {
   flex-grow: 1;
+  appearance: textfield;
 }
 
 .form__row--additionally {
