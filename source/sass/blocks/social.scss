@@ -3,13 +3,9 @@
 
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
   justify-content: center;
   margin: 0 auto;
   align-items: center;
-  // width: 180px;
-  // padding-right: 25px;
-  // padding-left: 25px;
   width: 200px;
 
   @media (min-width: $width-tablet) {
@@ -32,9 +28,24 @@
 }
 
 .social__item--vk {
-  svg {
-    fill: $icon;
+  display: block;
+  position: relative;
+  fill: $icon;
+  padding-top: 4px;
+  margin-right: -6px;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  svg {
     @media (min-width: $width-tablet) {
       @include image-size(30px, 16px);
     }
@@ -56,9 +67,24 @@
 }
 
 .social__item--instagram {
-  svg {
-    fill: $icon;
+  display: block;
+  position: relative;
+  fill: $icon;
+  padding-top: 4px;
+  margin-right: -6px;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  svg {
     @media (min-width: $width-tablet) {
       @include image-size(23px, 23px);
     }
@@ -80,9 +106,24 @@
 }
 
 .social__item--facebook {
-  svg {
-    fill: $icon;
+  display: block;
+  position: relative;
+  fill: $icon;
+  padding-top: 4px;
+  margin-right: -6px;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  svg {
     @media (min-width: $width-tablet) {
       @include image-size(14px, 28px);
     }
