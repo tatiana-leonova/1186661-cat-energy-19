@@ -34,12 +34,16 @@
   }
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 530px;
+    // margin-bottom: 530px;
+    min-height: 780px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $width-desktop) {
     margin-top: 30px;
-    margin-bottom: 270px;
+    min-height: 450px;
+    margin-bottom: 130px;
+    // margin-bottom: 270px;
   }
 }
 

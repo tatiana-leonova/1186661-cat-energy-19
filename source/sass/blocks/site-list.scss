@@ -17,15 +17,22 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 21px;
+  padding-bottom: 23px;
   border-bottom: 1px solid $bg-grey;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   @media (min-width: $width-tablet) {
     @include text(18px, 25px);
     font-weight: 400;
     border-bottom: none;
     margin-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $width-desktop) {

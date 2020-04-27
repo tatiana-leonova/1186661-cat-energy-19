@@ -57,6 +57,7 @@
 .contacts__address {
   @include text(14px, 20px);
   padding-top: 2px;
+  width: 139px;
 
   @media (min-width: $width-tablet) {
     @include text(16px, 20px);
