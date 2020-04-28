@@ -174,15 +174,6 @@
   }
 }
 
-// .form__input--field-email {
-//   flex-grow: 1;
-//   // padding-right: 50px;
-
-//   @media (min-width: $width-desktop) {
-//     width: 482px;
-//   }
-// }
-
 .form__icon--field-email {
   width: 18px;
   height: 14px;
@@ -222,14 +213,6 @@
     right: 18px;
   }
 }
-
-// .form__input--field-tel {
-//   flex-grow: 1;
-
-//   @media (min-width: $width-desktop) {
-//     width: 470px;
-//   }
-// }
 
 .form__row-wrapper--radio {
   border: 1px solid #e6e6e6;
@@ -313,7 +296,6 @@
     }
   }
 
-
   @media (min-width: $width-tablet) {
     padding-left: 11px;
   }
@@ -321,6 +303,10 @@
 
 .form__input--radio:checked ~ .form__label--radio::after {
   display: block;
+}
+
+.form__input--radio:disabled ~ .form__label--radio {
+  opacity: 0.3;
 }
 
 .form__legend--additionally {
@@ -360,7 +346,6 @@
 .form__row {
   display: flex;
   align-items: center;
-  // flex-wrap: wrap;
   margin-bottom: 14px;
 
   @media (min-width: $width-tablet) {
@@ -530,6 +515,10 @@
   display: block;
 }
 
+.form__input--checkbox:disabled ~ .form__label--checkbox {
+  opacity: 0.3;
+}
+
 .form__legend--comment {
   @media (max-width: $mobile-width-only) {
     margin-left: -20px;
@@ -586,7 +575,6 @@
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
   }
-
 
   @media (min-width: $width-tablet) {
     @include text(20px, 20px);
