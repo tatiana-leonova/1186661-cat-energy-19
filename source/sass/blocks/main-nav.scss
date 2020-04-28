@@ -44,12 +44,9 @@
 }
 
 .main-nav__logo-image {
-  // .copyright__link-icon {
   display: block;
   position: relative;
   fill: $icon;
-  // padding-top: 4px;
-  // margin-right: -6px;
 
   &::before {
     content: "";
@@ -61,11 +58,6 @@
     left: 0;
     z-index: 100;
   }
-
-  // &:active {
-  //   opacity: 0.3;
-  // }
-  // }
 
   &:hover,
   &:focus {

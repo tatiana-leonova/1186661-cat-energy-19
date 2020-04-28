@@ -348,8 +348,18 @@
   align-items: center;
   margin-bottom: 14px;
 
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+  }
+
   @media (min-width: $width-tablet) {
     margin-bottom: 20px;
+  }
+}
+
+.form__input--cat-ago {
+  @media (max-width: $mobile-width-only) {
+    width: 175px;
   }
 }
 
@@ -388,15 +398,12 @@
 }
 
 .form__input--field {
-  padding-top: 13px;
   padding-right: 15px;
-  padding-bottom: 12px;
   padding-left: 15px;
+  height: 45px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 10px;
     padding-right: 20px;
-    padding-bottom: 10px;
     padding-left: 20px;
     height: 52px;
   }
@@ -414,7 +421,7 @@
 
 .form__input--field-tel {
   flex-grow: 1;
-  padding-right: 40px;
+  padding-right: 23px;
 
   @media (min-width: $width-desktop) {
     width: 470px;

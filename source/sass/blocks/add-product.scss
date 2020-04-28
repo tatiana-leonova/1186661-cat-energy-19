@@ -64,6 +64,10 @@
   width: 100%;
   margin-bottom: 10px;
 
+  @media (max-width: $mobile-width-only) {
+    margin-left: -5px;
+  }
+
   @media (min-width: $width-tablet) {
     @include text(16px, 20px);
     width: 250px;

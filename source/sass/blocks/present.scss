@@ -28,7 +28,7 @@
     min-height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     width: 245px;
-    margin-bottom: 80px;
+    margin-bottom: 68px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
@@ -47,7 +47,7 @@
 
   padding-top: 187px;
   padding-right: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   padding-left: 50px;
 
   @media (min-width: $width-tablet) {
