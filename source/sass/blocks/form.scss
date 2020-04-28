@@ -360,7 +360,7 @@
 .form__row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin-bottom: 14px;
 
   @media (min-width: $width-tablet) {
